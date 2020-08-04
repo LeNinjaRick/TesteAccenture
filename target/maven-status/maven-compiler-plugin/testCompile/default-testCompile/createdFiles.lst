@@ -1,0 +1,4 @@
+br\ce\rjdomingues\pageobjects\PageObjects.class
+br\ce\rjdomingues\steps\SeguroVeiculoSteps.class
+br\ce\rjdomingues\actions\Actions.class
+br\ce\rjdomingues\runners\RunnerTest.class
