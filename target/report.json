@@ -3,7 +3,7 @@
     "line": 3,
     "elements": [
       {
-        "start_timestamp": "2020-08-04T20:46:52.324Z",
+        "start_timestamp": "2020-08-04T22:48:08.822Z",
         "line": 15,
         "name": "envio de e-mail bem sucedido",
         "description": "",
@@ -13,7 +13,7 @@
         "steps": [
           {
             "result": {
-              "duration": 10953000000,
+              "duration": 10279000000,
               "status": "passed"
             },
             "line": 7,
@@ -25,7 +25,7 @@
           },
           {
             "result": {
-              "duration": 36781000000,
+              "duration": 36833000000,
               "status": "passed"
             },
             "line": 8,
@@ -37,7 +37,7 @@
           },
           {
             "result": {
-              "duration": 5901000000,
+              "duration": 5905000000,
               "status": "passed"
             },
             "line": 9,
@@ -71,185 +71,19 @@
           },
           {
             "result": {
-              "duration": 15435000000,
+              "duration": 14987000000,
               "status": "passed"
             },
             "line": 10,
-            "name": "recebo uma mensagem de email enviado com sucesso",
-            "match": {
-              "location": "br.ce.rjdomingues.steps.SeguroVeiculoSteps.recebo_uma_mensagem_de_email_enviado_com_sucesso()"
-            },
-            "keyword": "Entao "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@pedidoSeguro"
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2020-08-04T20:48:01.548Z",
-        "line": 16,
-        "name": "envio de e-mail bem sucedido",
-        "description": "",
-        "id": "pedido-de-seguro-de-veiculo;envio-de-e-mail-bem-sucedido;;3",
-        "type": "scenario",
-        "keyword": "Esquema do Cenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 9075000000,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "que estou na pagina de preenchimento de pedido de seguro",
-            "match": {
-              "location": "br.ce.rjdomingues.steps.SeguroVeiculoSteps.que_estou_na_pagina_de_preenchimento_de_pedido_de_seguro()"
-            },
-            "keyword": "Dado "
-          },
-          {
-            "result": {
-              "duration": 36429000000,
-              "status": "passed"
-            },
-            "line": 8,
-            "name": "preencho corretamente todos os campos solicitados",
-            "match": {
-              "location": "br.ce.rjdomingues.steps.SeguroVeiculoSteps.preencho_corretamente_todos_os_campos_solicitados()"
-            },
-            "keyword": "Quando "
-          },
-          {
-            "result": {
-              "duration": 6001000000,
-              "status": "passed"
-            },
-            "line": 9,
-            "name": "preencho os dados de cadastro \"a@a.com\",\"199999999\",\"user2\",\"Rr12345\",\"Rr12345\"",
+            "name": "recebo uma mensagem de amostra como resultado: \"Sending e-mail success!\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"a@a.com\"",
-                  "offset": 30
-                },
-                {
-                  "val": "\"199999999\"",
-                  "offset": 40
-                },
-                {
-                  "val": "\"user2\"",
-                  "offset": 52
-                },
-                {
-                  "val": "\"Rr12345\"",
-                  "offset": 60
-                },
-                {
-                  "val": "\"Rr12345\"",
-                  "offset": 70
+                  "val": "\"Sending e-mail success!\"",
+                  "offset": 47
                 }
               ],
-              "location": "br.ce.rjdomingues.steps.SeguroVeiculoSteps.preencho_os_dados_de_cadastro(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)"
-            },
-            "keyword": "E "
-          },
-          {
-            "result": {
-              "duration": 15179000000,
-              "status": "passed"
-            },
-            "line": 10,
-            "name": "recebo uma mensagem de email enviado com sucesso",
-            "match": {
-              "location": "br.ce.rjdomingues.steps.SeguroVeiculoSteps.recebo_uma_mensagem_de_email_enviado_com_sucesso()"
-            },
-            "keyword": "Entao "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@pedidoSeguro"
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2020-08-04T20:49:08.254Z",
-        "line": 17,
-        "name": "envio de e-mail bem sucedido",
-        "description": "",
-        "id": "pedido-de-seguro-de-veiculo;envio-de-e-mail-bem-sucedido;;4",
-        "type": "scenario",
-        "keyword": "Esquema do Cenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 9433000000,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "que estou na pagina de preenchimento de pedido de seguro",
-            "match": {
-              "location": "br.ce.rjdomingues.steps.SeguroVeiculoSteps.que_estou_na_pagina_de_preenchimento_de_pedido_de_seguro()"
-            },
-            "keyword": "Dado "
-          },
-          {
-            "result": {
-              "duration": 36965000000,
-              "status": "passed"
-            },
-            "line": 8,
-            "name": "preencho corretamente todos os campos solicitados",
-            "match": {
-              "location": "br.ce.rjdomingues.steps.SeguroVeiculoSteps.preencho_corretamente_todos_os_campos_solicitados()"
-            },
-            "keyword": "Quando "
-          },
-          {
-            "result": {
-              "duration": 5930000000,
-              "status": "passed"
-            },
-            "line": 9,
-            "name": "preencho os dados de cadastro \"rrrr@r.com\",\"199999999\",\"user3\",\"Rr12345\",\"Rr12345\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"rrrr@r.com\"",
-                  "offset": 30
-                },
-                {
-                  "val": "\"199999999\"",
-                  "offset": 43
-                },
-                {
-                  "val": "\"user3\"",
-                  "offset": 55
-                },
-                {
-                  "val": "\"Rr12345\"",
-                  "offset": 63
-                },
-                {
-                  "val": "\"Rr12345\"",
-                  "offset": 73
-                }
-              ],
-              "location": "br.ce.rjdomingues.steps.SeguroVeiculoSteps.preencho_os_dados_de_cadastro(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)"
-            },
-            "keyword": "E "
-          },
-          {
-            "result": {
-              "duration": 15571000000,
-              "status": "passed"
-            },
-            "line": 10,
-            "name": "recebo uma mensagem de email enviado com sucesso",
-            "match": {
-              "location": "br.ce.rjdomingues.steps.SeguroVeiculoSteps.recebo_uma_mensagem_de_email_enviado_com_sucesso()"
+              "location": "br.ce.rjdomingues.steps.SeguroVeiculoSteps.recebo_uma_mensagem_de_amostra_como_resultado(java.lang.String)"
             },
             "keyword": "Entao "
           }

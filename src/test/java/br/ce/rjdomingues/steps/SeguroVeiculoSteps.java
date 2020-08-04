@@ -38,12 +38,12 @@ public class SeguroVeiculoSteps {
 
 	}
 
-	@Entao("recebo uma mensagem de email enviado com sucesso")
-	public void recebo_uma_mensagem_de_email_enviado_com_sucesso() throws InterruptedException {
+	@Entao("recebo uma mensagem de amostra como resultado: {string}")
+	public void recebo_uma_mensagem_de_amostra_como_resultado(String mensagem)  throws InterruptedException {
 
-		Actions.validarEmail(driver);
+		Actions.validarEmail(driver, mensagem);
 		
-		//caso queira ver todos os campos preenchidos, apenas comente o comando abaixo e o Browser continuará aberto após a execução:
+		//caso queira ver todos os campos preenchidos, apenas comente o comando abaixo e o Browser continuara aberto apos a execucao:
 		
 		driver.close();
 

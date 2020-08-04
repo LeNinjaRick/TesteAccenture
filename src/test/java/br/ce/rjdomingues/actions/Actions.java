@@ -20,7 +20,7 @@ import br.ce.rjdomingues.pageobjects.PageObjects;
 
 public class Actions {
 
-	// Metodo para executar ações da classe robot com o Clipboard. (CTRL + C) e
+	// Metodo para executar acoes da classe robot com o Clipboard. (CTRL + C) e
 	// (CTRL + V)
 	public static void setClipboardData(String string) {
 		StringSelection stringSelection = new StringSelection(string);
@@ -50,7 +50,7 @@ public class Actions {
 	}
 
 	// 1
-	// Ações do primeiro formulario
+	// Acoes do primeiro formulario
 	public static void preencherCamposEnterVehicleData(WebDriver driver) throws InterruptedException {
 
 		JavascriptExecutor jse = (JavascriptExecutor) driver;
@@ -66,7 +66,7 @@ public class Actions {
 		// performance do motor enviada
 		objects.enginePerformance().clear();
 		objects.enginePerformance().sendKeys("123");
-		// data de fabricação enviada como saida de teclado
+		// data de fabricacaoo enviada como saida de teclado
 		objects.dateOfManufacture().clear();
 		objects.dateOfManufacture().sendKeys("07/05/2020");
 		// numero de assentos selecionado
@@ -74,7 +74,7 @@ public class Actions {
 		// numero de assentos de moto selecionado
 		objects.numberOfSeatsMotorcycle().selectByVisibleText("2");
 		//////////////////////////////////
-		// volante não esta do lado direito:
+		// volante nao esta do lado direito:
 		objects.handDriveNo().click();
 		// volante esta do lado direito:
 		// objects.handDriveYes().click();
@@ -106,13 +106,13 @@ public class Actions {
 		objects.annualMileage().sendKeys("123");
 		// pedindo um tempo de espera
 		Thread.sleep(5000);
-		// clica no botão next:
+		// clica no botao next:
 		objects.nextEnterInsurantData().click();
 
 	}
 
 	// 2
-	// Ações do segundo formulario
+	// Acoes do segundo formulario
 	public static void preencherCamposEnterInsurantData(WebDriver driver)
 			throws InterruptedException, AWTException, IOException {
 
@@ -168,7 +168,7 @@ public class Actions {
 		// Enviar a imagem:
 		// a variavel assume o caminho do arquivo
 		String path = new File("../TesteAccentureRicardoVaz/imagem.jpg").getCanonicalPath();
-		// clicar no botão de upload:
+		// clicar no botao de upload:
 		objects.openImage().click();
 		// espera
 		Thread.sleep(2000);
@@ -185,13 +185,13 @@ public class Actions {
 		
 
 		Thread.sleep(10000);
-		// clicar no botão next:
+		// clicar no botao next:
 		objects.nextEnterProductData().click();
 
 	}
 
 	// 3
-	// Ações do terceiro formulario
+	// Acoes do terceiro formulario
 	public static void preencherCamposEnterProductdata(WebDriver driver) throws InterruptedException {
 
 		PageObjects objects = new PageObjects(driver);
@@ -202,7 +202,7 @@ public class Actions {
 		objects.startDate().sendKeys("12/15/2020");
 		// selecionar a soma de seguros
 		objects.insuranceSum().selectByVisibleText("3.000.000,00");
-		// selecionar a classificação de mérito
+		// selecionar a classificacao de merito
 		objects.meritRating().selectByVisibleText("Malus 10");
 
 		// rolagem da tela:
@@ -225,7 +225,7 @@ public class Actions {
 	}
 
 	// 4
-	// Ações do Quarto Formulario
+	// Acoes do Quarto Formulario
 	public static void preencherCamposSelectPriceOption(WebDriver driver) throws InterruptedException {
 
 		PageObjects objects = new PageObjects(driver);
@@ -244,13 +244,13 @@ public class Actions {
 
 		// espera
 		Thread.sleep(5000);
-		// clicar no botão next
+		// clicar no botao next
 		objects.nextSendQuote().click();
 
 	}
 
 	// 5
-	// Ações do Quinto Formulario
+	// Acoes do Quinto Formulario
 	public static void preencherCamposSendQuote(WebDriver driver, String email, String phone, String username,
 			String password, String confirmPass) throws InterruptedException {
 
@@ -267,7 +267,7 @@ public class Actions {
 		objects.username().clear();
 		objects.username().sendKeys(username);
 		//////// scroll do mouse
-		jse.executeScript("window.scrollTo(0,350);");
+		jse.executeScript("window.scrollTo(0,250);");
 		// preencher o campo Password
 		objects.password().clear();
 		objects.password().sendKeys(password);
@@ -280,13 +280,13 @@ public class Actions {
 	
 		// espera
 		Thread.sleep(5000);
-		// clicar no botão send email:
+		// clicar no botao send email:
 		objects.sendEmail().click();
 
 	}
 
-	// Ação de validação
-	public static void validarEmail(WebDriver driver) throws InterruptedException {
+	// Acao de validacao
+	public static void validarEmail(WebDriver driver, String mensagem) throws InterruptedException {
 		// espera implicita pro carregamento da mensagem de Enviado
 		driver.manage().timeouts().implicitlyWait(25, TimeUnit.SECONDS);
 
@@ -294,9 +294,9 @@ public class Actions {
 				.getText();
 
 		// Assert de resposta pra validar a mensagem de sucesso:
-		Assert.assertEquals("Sending e-mail success!", mensagemEmail);
+		Assert.assertEquals(mensagem, mensagemEmail);
 
-		// espera após finalizar a verificação.
+		// espera apos finalizar a verificacao.
 		Thread.sleep(5000);
 
 	}
