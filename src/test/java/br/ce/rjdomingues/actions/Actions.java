@@ -168,8 +168,10 @@ public class Actions {
 		// Enviar a imagem:
 		// a variavel assume o caminho do arquivo
 		String path = new File("../TesteAccentureRicardoVaz/imagem.jpg").getCanonicalPath();
+	
 		// clicar no botao de upload:
 		objects.openImage().click();
+		
 		// espera
 		Thread.sleep(2000);
 		// deixa o CTRL + C carregado com o caminho do arquivo:
@@ -184,7 +186,7 @@ public class Actions {
 		robot.keyRelease(KeyEvent.VK_ENTER);
 		
 
-		Thread.sleep(10000);
+		Thread.sleep(5000);
 		// clicar no botao next:
 		objects.nextEnterProductData().click();
 
